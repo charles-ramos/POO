@@ -1,10 +1,7 @@
 package com.agenda.wb;
 
 public class Menu {
-	// métodos static, s�o métodos que não precisam de um objeto
-	// para serem executados!
-	// métodos static pertencem a classe
-	// static é um modificador de comportamento
+
 	public static void mostrarMenu() {
 		System.out.println("\n*********************");
 		System.out.println("Selecione a opcao desejada:");

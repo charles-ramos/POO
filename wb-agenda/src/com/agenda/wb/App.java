@@ -16,7 +16,7 @@ public class App{
 		// caminho para onde eu vou salvar o cadastros de clientes
 		String caminho = "\\Desktop\\clientes.ser";
 		
-		// iniciando o controle para receber as informa��es pelo teclado
+		// iniciando o controle para receber as informações pelo teclado
 		Controle controle = new Controle();
 
 		// lista para armazenar todos os cadastros de cada cliente
@@ -27,13 +27,13 @@ public class App{
 		int aux;
 
 		
-		// estrutura de repeti��o que ir� manter o sistema ativo,
+		// estrutura de repetição que irá manter o sistema ativo,
 		// enquanto for desejado
 		while (escolha != 7) {
 			Menu.mostrarMenu();
 			escolha = controle.opcao();
 
-			// se a op��o digitada for 1, o usu�rio escolheu
+			// se a opção digitada for 1, o usuário escolheu
 			// cadastrar um cliente
 			if (escolha == 1) {
 				Cliente c = new Cliente();
@@ -79,10 +79,10 @@ public class App{
 				System.out.println("Cadastro removido!\n");
 			}
 			
-			// se a op��o for 4, a escolha foi listar a lista com todos os
+			// se a opção for 4, a escolha foi listar a lista com todos os
 			// clientes
 			if (escolha == 4) {
-				// expressao lambda, 'pessoa' aqui � uma vari�vel
+				// expressao lambda, 'pessoa' aqui é uma variável
 				// poderia receber qualquer nome como: x, y, clientes, etc...
 				cadastros.forEach(pessoa -> System.out.println(pessoa));
 				if(cadastros.isEmpty()) {

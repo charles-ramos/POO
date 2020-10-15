@@ -27,9 +27,4 @@ public class Controle {
 		leitor = leitor.reset();
 		return t;
 	}
-
-/*	@Override
-	protected void finalize() throws Throwable {
-		leitor.close();
-	}*/
 }
