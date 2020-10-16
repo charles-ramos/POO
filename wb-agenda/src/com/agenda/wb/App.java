@@ -8,12 +8,10 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.worldbeauty.Cliente;
-
 public class App{
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws Exception {
-		// caminho para onde eu vou salvar o cadastros de clientes
+		// caminho para onde eu vou salvar o cadastro de clientes
 		String caminho = "\\Desktop\\clientes.ser";
 		
 		// iniciando o controle para receber as informações pelo teclado
@@ -43,8 +41,6 @@ public class App{
 				System.out.println("Por favor insira o telefone:\n");
 				c.telefone = controle.texto();
 				System.out.println("Por favor insira a data de nascimento:\n");
-				c.nascimento= controle.texto();
-				System.out.println("Gênero:\n");
 				c.genero = controle.texto();
 				cadastros.add(c);
 			}
@@ -74,7 +70,7 @@ public class App{
 			if (escolha == 3) {
 				System.out.println("Digite o id do cadastro\n");
 				aux = controle.opcao();
-				System.out.println("cad: "+cadastros.get(aux-1));
+				System.out.println("cad: " + cadastros.get(aux-1));
 				cadastros.remove(aux-1);
 				System.out.println("Cadastro removido!\n");
 			}

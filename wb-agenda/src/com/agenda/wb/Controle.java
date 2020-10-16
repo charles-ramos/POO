@@ -21,6 +21,13 @@ public class Controle {
 		return op2;
 	}
 	
+	public synchronized int inteiro() {
+		leitor = new Scanner(System.in);
+		int inteiro = leitor.nextInt();
+		leitor = leitor.reset();
+		return inteiro;
+	}
+	
 	public synchronized String texto() {
 		leitor = new Scanner(System.in);
 		String t = leitor.nextLine();
